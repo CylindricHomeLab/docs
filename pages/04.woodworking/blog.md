@@ -1,10 +1,6 @@
 ---
-title: Woodworking
-taxonomy:
-    category:
-        - Woodworking
-    tag:
-        - woodwork
+content:
+    items: '@self.children'
 ---
 
 Here are various pages about some woodworking projects...
