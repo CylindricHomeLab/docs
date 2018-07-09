@@ -9,10 +9,10 @@ taxonomy:
         - toys
 ---
 
-Currently working on the second toy boat from the "Scroll Saw Magic Floating Boats" set from [ToyMakingPlans](https://www.toymakingplans.com/website/PlanSets/scrollsawmagic-floating-boats.html).
+I'm currently working on the second toy boat from the "Scroll Saw Magic Floating Boats" set from [ToyMakingPlans](https://www.toymakingplans.com/website/PlanSets/scrollsawmagic-floating-boats.html).
 
 ![wip day 2](IMG_20180708_174324.jpg?cropResize=800,800)
-
+===
 This is after "day 2", at which point the keel, the sides and the main deck were pretty much done.
 
 ![wip day 3 ballasing](ballasting.jpg?cropResize=800,800) ![wip day 3 drying out](dryingout.jpg?cropResize=800,800)
