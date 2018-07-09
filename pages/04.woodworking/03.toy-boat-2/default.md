@@ -1,6 +1,12 @@
 ---
 title: 'Toy Boat 2'
 media_order: 'IMG_20180708_174324.jpg,ballasting.jpg,dryingout.jpg'
+taxonomy:
+    category:
+        - Woodworking
+    tag:
+        - woodwork
+        - toys
 ---
 
 Currently working on the second toy boat from the "Scroll Saw Magic Floating Boats" set from [ToyMakingPlans](https://www.toymakingplans.com/website/PlanSets/scrollsawmagic-floating-boats.html).
