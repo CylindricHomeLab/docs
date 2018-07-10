@@ -2,7 +2,7 @@
 title: 'CaddyServer and Cloudflare'
 taxonomy:
     category:
-        - tech
+        - Tech
     tag:
         - caddy
         - ssl
