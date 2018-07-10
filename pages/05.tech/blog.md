@@ -1,4 +1,5 @@
 ---
-title: 'Tech Stuff'
+content:
+    items: '@self.children'
 ---
 
