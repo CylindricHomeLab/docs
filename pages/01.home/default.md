@@ -7,5 +7,3 @@ process:
 ---
 
 Hello
-
-{% include 'partials/taxonomylist.html.twig' with {base_url: /tech, taxonomy: 'tag'} %}
