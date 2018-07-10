@@ -1,5 +1,5 @@
 ---
 title: 'Tech Stuff'
-theme: knowledge-base-cyl
+theme: knowledge-base
 ---
 
