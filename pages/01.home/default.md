@@ -13,4 +13,7 @@ process:
 
 Hello
 
-{{ page.header.taxonomy.category }}
+{% for category,value in page.header.taxonomy.category %}
+{{ category }}{{ value }}
+
+{% endfor %>
