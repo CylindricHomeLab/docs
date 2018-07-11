@@ -1,10 +1,9 @@
 ---
-theme: cylindric-kb
 taxonomy:
     category:
         - Tech
 child_type: item
-theme: cylindric-kb
+theme: learn2
 content:
     items: '@self.children'
 ---
