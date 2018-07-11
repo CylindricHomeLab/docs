@@ -13,6 +13,10 @@ show_breadcrumbs: true
 show_pagination: true
 ---
 
+How to create a certificate with SAN fields.
+
+===
+
 # Create a Request Config
 Create a cert.cnf request template
 
