@@ -1,10 +1,10 @@
 ---
-theme: knowledge-base-cyl
+theme: cylindric-kb
 taxonomy:
     category:
         - Tech
 child_type: item
-theme: knowledge-base-cyl
+theme: cylindric-kb
 content:
     items: '@self.children'
 ---

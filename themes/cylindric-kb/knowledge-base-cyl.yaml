@@ -4,5 +4,5 @@ streams:
      type: ReadOnlyStream
      prefixes:
        '':
-         - user/themes/knowledge-base-cyl
+         - user/themes/cylindric-kb
          - user/themes/knowledge-base

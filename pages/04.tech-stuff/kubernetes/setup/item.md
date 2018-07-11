@@ -6,7 +6,7 @@ taxonomy:
     tag:
         - kubernetes
         - containers
-theme: knowledge-base-cyl
+theme: cylindric-kb
 ---
 
 Some setup notes for Kubernetes.

@@ -5,7 +5,7 @@ taxonomy:
         - Tech
     tag:
         - licensing
-theme: knowledge-base-cyl
+theme: cylindric-kb
 ---
 
 Some general tips for Windows Licensing.

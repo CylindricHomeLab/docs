@@ -3,7 +3,7 @@ namespace Grav\Theme;
 
 use Grav\Common\Theme;
 
-class KnowledgebaseCyl extends KnowledgeBase
+class CylindricKb extends KnowledgeBase
 {
    // Some new methods, properties etc.
 }

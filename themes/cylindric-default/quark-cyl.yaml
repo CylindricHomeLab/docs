@@ -4,5 +4,5 @@ streams:
      type: ReadOnlyStream
      prefixes:
        '':
-         - user/themes/quark-cyl
+         - user/themes/cylindric-default
          - user/themes/quark
