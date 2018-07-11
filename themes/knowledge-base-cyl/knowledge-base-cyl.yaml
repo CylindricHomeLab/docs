@@ -1,0 +1,8 @@
+streams:
+ schemes:
+   theme:
+     type: ReadOnlyStream
+     prefixes:
+       '':
+         - user/themes/knowledge-base-cyl
+         - user/themes/knowledge-base
