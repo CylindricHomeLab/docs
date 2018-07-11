@@ -1,4 +1,5 @@
 ---
+theme: knowledge-base
 content:
     items: '@self.children'
 ---
