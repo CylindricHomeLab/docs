@@ -1,9 +1,9 @@
-#blog-listing .card-title h5 {
+.blog-listing .card-title h5 {
 	margin-bottom: 0;
 	font-size: 1em;
 }
 
-#blog-listing .card-body p {
+.blog-listing .card-body p {
 	margin-top: 0;
 	margin-bottom: 0;
 }
