@@ -1,5 +1,5 @@
 ---
-title: OpenSSL Setup
+title: 'OpenSSL Setup'
 taxonomy:
     category:
         - Tech
@@ -20,7 +20,7 @@ General setup information for OpenSSL.
 # SSL CA
 ## Pre-Requisites
 
-```text
+```
 mkdir ./ca
 cd ./ca
 mkdir certs crl newcerts private intermediate
