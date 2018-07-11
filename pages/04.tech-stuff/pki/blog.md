@@ -1,5 +1,5 @@
 ---
-title: pki
+title: PKI
 taxonomy:
     category:
         - Tech
@@ -9,3 +9,4 @@ content:
     items: '@self.children'
 ---
 
+Various articles and information about generating certificates and running a PKI infrastructure.
