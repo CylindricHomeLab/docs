@@ -1,5 +1,5 @@
 ---
-theme: knowledge-base
+theme: knowledge-base-cyl
 content:
     items: '@self.children'
 ---
