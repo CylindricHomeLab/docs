@@ -5,7 +5,6 @@ taxonomy:
     category:
         - Woodworking
     tag:
-        - woodwork
         - toys
 ---
 
