@@ -136,13 +136,13 @@ keyUsage               = critical, digitalSignature
 extendedKeyUsage       = critical, OCSPSigning
 ```
 ## Create the Root Key
-```text
+```
 openssl genrsa -aes256 -out private/ca.key.pem 4096
 chmod 400 private/ca.key.pem
 ```
 
 ## Create the CA Certificate
-```text
+```
 openssl req -config openssl.cnf -key private/ca.key.pem -new -x509 -days 7300 -extensions v3_ca -out certs/ca.cert.pem
 chmod 444 certs/ca.cert.pem
 ```

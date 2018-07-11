@@ -1,5 +1,5 @@
 ---
-title: openssl
+title: OpenSSL
 taxonomy:
     category:
         - Tech
@@ -9,3 +9,4 @@ content:
     items: '@self.children'
 ---
 
+Some articles here about how to generate CA certs using OpenSSL.
