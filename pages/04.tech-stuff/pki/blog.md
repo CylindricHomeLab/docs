@@ -1,5 +1,8 @@
 ---
 title: pki
+taxonomy:
+    category:
+        - Tech
 child_type: item
 theme: knowledge-base-cyl
 content:
