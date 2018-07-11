@@ -6,11 +6,6 @@ taxonomy:
     tag:
         - pki
         - cfssl
-theme: cylindric-kb
-blog_url: /blog
-show_sidebar: true
-show_breadcrumbs: true
-show_pagination: true
 ---
 
 General setup information for CFSSL.
