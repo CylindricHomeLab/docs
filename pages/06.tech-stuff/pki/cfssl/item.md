@@ -1,5 +1,11 @@
 ---
 title: CFSSL
+taxonomy:
+    category:
+        - Tech
+    tag:
+        - pki
+        - cfssl
 blog_url: /blog
 show_sidebar: true
 show_breadcrumbs: true
