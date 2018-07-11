@@ -1,6 +1,6 @@
 ---
 title: 'Toy Boat 2'
-media_order: 'IMG_20180708_174324.jpg,ballasting.jpg,dryingout.jpg'
+media_order: 'hull.jpg,ballasting.jpg,dryingout.jpg'
 taxonomy:
     category:
         - Woodworking
@@ -13,7 +13,7 @@ I'm currently working on the second toy boat from the "Scroll Saw Magic Floating
 
 ===
 
-![wip day 2](IMG_20180708_174324.jpg?cropResize=800,800)
+![wip day 2](hull.jpg?cropResize=800,800)
 
 This is after "day 2", at which point the keel, the sides and the main deck were pretty much done.
 
