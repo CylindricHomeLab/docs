@@ -1,5 +1,5 @@
 ---
-title: Certificate With San
+title: 'Certificate With San'
 taxonomy:
     category:
         - Tech
