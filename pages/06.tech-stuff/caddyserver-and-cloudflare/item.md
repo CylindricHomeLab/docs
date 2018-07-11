@@ -14,8 +14,6 @@ show_breadcrumbs: true
 show_pagination: true
 ---
 
-# The Problem
-
 CaddyServer usually forces all traffic to use SSL encryption - that's pretty much the main point of it. However, for the automatic LetsEncrypt certificate generation to work, the CaddyServer needs to be directly accessible from the internet, because that's how the ACME protocol confirms validity of the domain. 
 
 ===
