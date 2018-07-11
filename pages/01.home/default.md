@@ -10,9 +10,4 @@ content:
 body_classes: 'title-center title-h1h2'
 ---
 
-Hello
-
-{% for category,value in page.header.taxonomy.category %}
-{{ category }}{{ value }}
-
-{% endfor %}
+Hello. I will write a nice intro here, I'm just doing this other thing first...
