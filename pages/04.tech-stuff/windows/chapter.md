@@ -1,4 +1,5 @@
 ---
+title: Windows
 taxonomy:
     category:
         - Tech
@@ -8,4 +9,4 @@ content:
     items: '@self.children'
 ---
 
-These are various tech notes I've made, mostly for my future self.
+Various Windows-specific tips and information.
