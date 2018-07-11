@@ -1,5 +1,5 @@
 ---
-title: CFSSL Setup
+title: 'CFSSL Setup'
 taxonomy:
     category:
         - Tech
