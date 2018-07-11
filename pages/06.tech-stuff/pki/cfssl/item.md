@@ -6,6 +6,7 @@ taxonomy:
     tag:
         - pki
         - cfssl
+theme: knowledge-base
 blog_url: /blog
 show_sidebar: true
 show_breadcrumbs: true
