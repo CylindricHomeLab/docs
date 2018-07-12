@@ -40,9 +40,6 @@ For machines that will be later activated using KMS or ADBA, the product key sho
   <ProductKey>
     <WillShowUI>OnError</WillShowUI>
   </ProductKey>
-  <AcceptEula>true</AcceptEula>
-  <FullName>Administrator</FullName>
-  <Organization>Org Name</Organization>
 </UserData>
 ```
 For machines using the 180-day trial, the key should be specified:
@@ -52,9 +49,6 @@ For machines using the 180-day trial, the key should be specified:
     <Key>WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY</Key>
     <WillShowUI>OnError</WillShowUI>
   </ProductKey>
-  <AcceptEula>true</AcceptEula>
-  <FullName>Administrator</FullName>
-  <Organization>Org Name</Organization>
 </UserData>
 ```
 
@@ -84,8 +78,6 @@ And again in the `oobeSystem`  settiongs pass:
 Finally set the correct timezone within the `Microsoft-Windows-Shell-Setup` component:
 ```
 <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  ...
   <TimeZone>GMT Standard Time</TimeZone>
-  ...
 </Component>
 ```
