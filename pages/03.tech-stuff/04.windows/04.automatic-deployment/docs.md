@@ -31,3 +31,53 @@ Valid options for `<Value>` are:
 * Windows Server 2016 SERVERSTANDARD
 * Windows Server 2016 SERVERSTANDARDACORE
 * Windows Server 2016 SERVERDATACENTER
+* Windows Server 2016 SERVERDATACENTERCORE
+
+## License Keys
+For machines that will be later activated using KMS or ADBA, the product key should be left out.
+```
+<UserData>
+  <ProductKey>
+    <WillShowUI>OnError</WillShowUI>
+  </ProductKey>
+  <AcceptEula>true</AcceptEula>
+  <FullName>Administrator</FullName>
+  <Organization>Org Name</Organization>
+</UserData>
+```
+For machines using the 180-day trial, the key should be specified:
+```
+<UserData>
+  <ProductKey>
+    <Key>WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY</Key>
+    <WillShowUI>OnError</WillShowUI>
+  </ProductKey>
+  <AcceptEula>true</AcceptEula>
+  <FullName>Administrator</FullName>
+  <Organization>Org Name</Organization>
+</UserData>
+```
+
+## UK Localisation
+In the `Microsoft-Windows-International-Core-WinPE` component, set the values as follows:
+```
+<component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+  <SetupUILanguage>
+    <UILanguage>en-US</UILanguage>
+  </SetupUILanguage>
+  <InputLocale>0809:00000809</InputLocale>
+  <SystemLocale>en-GB</SystemLocale>
+  <UILanguage>en-US</UILanguage>
+  <UILanguageFallback>en-GB</UILanguageFallback>
+  <UserLocale>en-GB</UserLocale>
+</component>
+```
+And again in the `oobeSystem`  settiongs pass:
+```
+<component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <InputLocale>e0809:00000809</InputLocale>
+  <SystemLocale>en-GB</SystemLocale>
+  <UILanguage>en-US</UILanguage>
+  <UserLocale>en-GB</UserLocale>
+</component>
+```
