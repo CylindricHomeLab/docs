@@ -6,6 +6,7 @@ taxonomy:
         - Woodworking
     tag:
         - toys
+        - boats
 ---
 
 This is the first toy boat I've built, the from the "Scroll Saw Magic Floating Boats" set from [ToyMakingPlans](https://www.toymakingplans.com/website/PlanSets/scrollsawmagic-floating-boats.html).

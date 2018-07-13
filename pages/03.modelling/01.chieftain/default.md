@@ -5,7 +5,8 @@ taxonomy:
     category:
         - Modelling
     tag:
-        - tank
+        - tanks
+        - tamiya
 ---
 
 With the intention of getting back into some miniature diorama stuff, I've recently picked

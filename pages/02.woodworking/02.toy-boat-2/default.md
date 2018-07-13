@@ -6,6 +6,7 @@ taxonomy:
         - Woodworking
     tag:
         - toys
+        - boats
 ---
 
 I'm currently working on the second toy boat, the Torpedo Speeder, from the "Scroll Saw Magic Floating Boats" set from [ToyMakingPlans](https://www.toymakingplans.com/website/PlanSets/scrollsawmagic-floating-boats.html).
