@@ -17,6 +17,7 @@ up a Tamiya British Army Chieftain MK.5 tank kit. This is the progress so far...
 
 ## Base Construction
 ![A cheeky shot of the sprues](sprue.jpg?cropResize=400)
+
 Not much to say here. Just a picture of the sprues :)
 
 ## Basecoating
