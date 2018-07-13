@@ -1,5 +1,5 @@
 ---
-title: 'Toy Boat 2'
+title: 'Torpedo Speeder'
 media_order: 'hull.jpg,ballasting.jpg,dryingout.jpg'
 taxonomy:
     category:
@@ -8,7 +8,7 @@ taxonomy:
         - toys
 ---
 
-I'm currently working on the second toy boat from the "Scroll Saw Magic Floating Boats" set from [ToyMakingPlans](https://www.toymakingplans.com/website/PlanSets/scrollsawmagic-floating-boats.html).
+I'm currently working on the second toy boat, the Torpedo Speeder, from the "Scroll Saw Magic Floating Boats" set from [ToyMakingPlans](https://www.toymakingplans.com/website/PlanSets/scrollsawmagic-floating-boats.html).
 
 ===
 
