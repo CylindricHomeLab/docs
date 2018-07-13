@@ -12,8 +12,6 @@ taxonomy:
 With the intention of getting back into some miniature diorama stuff, I've recently picked
 up a Tamiya British Army Chieftain MK.5 tank kit. This is the progress so far...
 
-![Camo base applied](camo-2.jpg?cropResize=800,800).
-
 ===
 
 ## Base Construction
