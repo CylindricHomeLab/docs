@@ -14,7 +14,10 @@ This is the first toy boat I've built, the from the "Scroll Saw Magic Floating B
 I've bought a few of their plans now, and also downloaded the free ones they have available, and they are of
 incredible quality. My first impression from the website was that it was a little dated, and experience led
 me to expect some fairly crude, or at least basic, PDF plans. This was far from the truth. The plans are amazing.
-They include:
+
+===
+
+The plans include:
 
 * many photographs of the finished items, some painted some natural
 * overview plans showing all the components
