@@ -32,4 +32,5 @@ Here I've sprayed on a few stripes of Tamiya `XF-49 Khaki`. Things are still pre
 
 ## Adding some more Camouflage
 ![Irradiated Swamp Camp](maskol-1.jpg?cropResize=400) ![Irradiated Swamp Camp](maskol-2.jpg?cropResize=400)
+
 Next I applied the "Hiding in an Irradiated Swamp" camo colours.
