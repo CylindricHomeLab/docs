@@ -40,3 +40,4 @@
     <a class="btn" href="{{ feed_url }}.rss"><i class="fa fa-rss-square"></i> RSS</a>
 </div>
 {% endif %}
+ {% include 'partials/socialbuttons.html.twig' with {'url' : page.url} %}
