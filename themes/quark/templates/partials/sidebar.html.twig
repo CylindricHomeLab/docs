@@ -24,7 +24,7 @@
 {% if config.plugins.taxonomylist.enabled %}
 <div class="sidebar-content">
     <h4>{{ 'SIDEBAR.POPULAR_TAGS.HEADLINE'|t }}</h4>
-    {% include 'partials/taxonomylist-childpages.html.twig' with {'base_url':new_base_url, 'taxonomy':'tag'} %}
+    {% include 'partials/taxonomylist.html.twig' with {'base_url':new_base_url, 'taxonomy':'tag'} %}
 </div>
 {% endif %}
 {% if config.plugins.archives.enabled %}
