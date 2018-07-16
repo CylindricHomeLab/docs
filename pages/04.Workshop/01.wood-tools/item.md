@@ -9,7 +9,7 @@ show_pagination: true
 
 ![Warco Mini Wood Lath](mini-woodworking-woodturning-lathe.jpg)
 
-![Wood Lathe Chisels](woodworking-lathe-chisels.jpg)
+![Wood Lathe Chisels](woodworking-lathe-chisels.jpg){.left}
 I bought this set of 8 woodturning lathe chisels from Warco at the same time as the lathe.
 
 Superb build quality throughout - these woodworking tools are built to last.
