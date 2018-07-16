@@ -7,11 +7,11 @@ show_breadcrumbs: true
 show_pagination: true
 ---
 
-![Warco Mini Wood Lath](mini-woodworking-woodturning-lathe.jpg)
+![Warco Mini Wood Lath](mini-woodworking-woodturning-lathe.jpg?cropResize=300)
 
 I bought this lovely little lathe from a local machine tool supplier, [Warco](https://www.warco.co.uk/wood-lathes/302917-mini-woodworking-woodturning-lathe.html)
 
-![Wood Lathe Chisels](woodworking-lathe-chisels.jpg)
+![Wood Lathe Chisels](woodworking-lathe-chisels.jpg?cropResize=300)
 
 I bought this set of 8 woodturning lathe chisels [from Warco](https://www.warco.co.uk/woodworking-chisels-wood-lathes/302842-woodworking-lathe-chisels.html) at the same time as the lathe.
 
