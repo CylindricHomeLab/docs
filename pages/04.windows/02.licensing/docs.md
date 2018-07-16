@@ -5,7 +5,6 @@ taxonomy:
         - Tech
     tag:
         - licensing
-theme: learn2
 ---
 
 Some general tips for Windows Licensing.

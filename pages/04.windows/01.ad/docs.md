@@ -5,7 +5,6 @@ taxonomy:
         - Tech
     tag:
         - ad
-theme: learn2
 ---
 
 Some general tips for AD.

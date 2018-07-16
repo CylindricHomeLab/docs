@@ -5,7 +5,7 @@ taxonomy:
         - Tech
     tag:
         - wsus
-theme: learn2
+
 ---
 
 Some general tips for WSUS.

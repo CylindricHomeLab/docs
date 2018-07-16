@@ -7,10 +7,9 @@ taxonomy:
         - caddy
         - ssl
         - cloudflare
-theme: learn2
 ---
 
-CaddyServer usually forces all traffic to use SSL encryption - that's pretty much the main point of it. However, for the automatic LetsEncrypt certificate generation to work, the CaddyServer needs to be directly accessible from the internet, because that's how the ACME protocol confirms validity of the domain. 
+CaddyServer usually forces all traffic to use SSL encryption - that's pretty much the main point of it. However, for the automatic LetsEncrypt certificate generation to work, the CaddyServer needs to be directly accessible from the internet, because that's how the ACME protocol confirms validity of the domain.
 
 ===
 
@@ -35,7 +34,7 @@ Then configure caddy (`/etc/caddy/Caddyfile`) to use the CloudFlare plugin inste
 wiki.cylindric.net {
     root /path/to/site
     tls email@example.com
-    
+
     tls {
         dns cloudflare
     }
