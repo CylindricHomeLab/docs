@@ -13,7 +13,7 @@ Various tips about PowerShell...
 
 This is useful for testing inbound network connectivity.
 
-```powershell
+```ps1
 function Listen-Port ($port=80){
 <#
 .DESCRIPTION
