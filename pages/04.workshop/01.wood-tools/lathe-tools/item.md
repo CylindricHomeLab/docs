@@ -10,7 +10,8 @@ blog_url: /blog
 show_sidebar: true
 show_breadcrumbs: true
 show_pagination: true
-toc: true
+page-toc:
+  active: true
 ---
 
 These are the various chisels, gouges and other tools I've bought for the lathe.
