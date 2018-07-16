@@ -1,8 +1,0 @@
-streams:
- schemes:
-   theme:
-     type: ReadOnlyStream
-     prefixes:
-       '':
-         - user/themes/antimatter-cyl
-         - user/themes/antimatter
