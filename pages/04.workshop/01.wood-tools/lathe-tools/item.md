@@ -1,14 +1,19 @@
 ---
 title: 'Lathe Tools'
-media_order: 'woodworking-lathe-chisels.jpg'
+media_order: woodworking-lathe-chisels.jpg
 taxonomy:
     category:
         - Tools
     tag:
         - lathe
+blog_url: /blog
+show_sidebar: true
+show_breadcrumbs: true
+show_pagination: true
 toc: true
 ---
 
+[TOC]
 These are the various chisels, gouges and other tools I've bought for the lathe.
 
 ===
