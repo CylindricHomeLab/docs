@@ -6,6 +6,7 @@ taxonomy:
         - Tools
     tag:
         - lathe
+toc: true
 ---
 
 These are the various chisels, gouges and other tools I've bought for the lathe.
