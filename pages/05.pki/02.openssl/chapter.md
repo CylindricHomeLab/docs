@@ -2,7 +2,7 @@
 title: OpenSSL
 taxonomy:
     category:
-        - Tech
+        - PKI
 child_type: docs
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: Kubernetes
+title: Web
 taxonomy:
     category:
-        - Tech
+        - Web
 child_type: docs
 content:
     items: '@self.children'
 ---
 
-Various Kubernetes tips and information.
+Various articles and information about Web stuff.

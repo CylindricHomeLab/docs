@@ -2,7 +2,7 @@
 title: 'Licensing Tips'
 taxonomy:
     category:
-        - Tech
+        - Windows
     tag:
         - licensing
 ---

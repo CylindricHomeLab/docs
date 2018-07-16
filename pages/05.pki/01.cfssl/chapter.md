@@ -2,7 +2,7 @@
 title: CFSSL
 taxonomy:
     category:
-        - Tech
+        - PKI
 child_type: docs
 ---
 

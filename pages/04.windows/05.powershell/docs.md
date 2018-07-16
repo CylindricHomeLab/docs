@@ -1,8 +1,8 @@
 ---
 title: 'PowerShell Tips'
 taxonomy:
-    category:
-        - PowerShell
+  category:
+      - Windows
 ---
 
 Various tips about PowerShell...

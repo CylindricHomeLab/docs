@@ -2,7 +2,7 @@
 title: 'CFSSL Setup'
 taxonomy:
     category:
-        - Tech
+        - PKI
     tag:
         - pki
         - cfssl

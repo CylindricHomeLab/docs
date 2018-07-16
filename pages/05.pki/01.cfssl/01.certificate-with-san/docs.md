@@ -2,7 +2,7 @@
 title: 'Certificate With San'
 taxonomy:
     category:
-        - Tech
+        - PKI
     tag:
         - pki
         - cfssl
@@ -43,4 +43,3 @@ Create a CSR and key from it
 ```text
 openssl req -out sslcert.csr -newkey rsa:2048 -nodes -keyout private.key -config cert.cnf
 ```
-

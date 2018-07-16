@@ -1,11 +1,11 @@
 ---
-title: Windows
+title: Kubernetes
 taxonomy:
     category:
-        - Windows
+        - Containerisation
 child_type: docs
 content:
     items: '@self.children'
 ---
 
-Various Windows-specific tips and information.
+Various Kubernetes tips and information.

@@ -2,7 +2,7 @@
 title: 'AD Tips'
 taxonomy:
     category:
-        - Tech
+        - Windows
     tag:
         - ad
 ---

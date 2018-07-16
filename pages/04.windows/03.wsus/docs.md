@@ -2,7 +2,7 @@
 title: 'WSUS Tips'
 taxonomy:
     category:
-        - Tech
+        - Windows
     tag:
         - wsus
 

@@ -2,7 +2,7 @@
 title: 'Client Cert'
 taxonomy:
     category:
-        - Tech
+        - PKI
     tag:
         - pki
         - cfssl

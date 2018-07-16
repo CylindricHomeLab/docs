@@ -2,7 +2,7 @@
 title: PKI
 taxonomy:
     category:
-        - Tech
+        - PKI
 child_type: docs
 content:
     items: '@self.children'

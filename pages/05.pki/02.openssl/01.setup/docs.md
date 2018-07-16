@@ -2,7 +2,7 @@
 title: 'OpenSSL Setup'
 taxonomy:
     category:
-        - Tech
+        - PKI
     tag:
         - pki
         - openssl

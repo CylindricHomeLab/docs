@@ -2,7 +2,7 @@
 title: 'Automatic Deployment'
 taxonomy:
     category:
-        - Tech
+        - Windows
 ---
 
 Various tips about the automatic deployment process...

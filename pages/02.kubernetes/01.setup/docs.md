@@ -2,7 +2,7 @@
 title: 'Kubernetes Setup'
 taxonomy:
     category:
-        - Tech
+        - Containerisation
     tag:
         - kubernetes
         - containers
