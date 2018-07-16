@@ -1,6 +1,6 @@
 ---
 title: 'Mini Lathe'
-media_order: 'mini-woodworking-woodturning-lathe.jpg'
+media_order: 'mini-woodworking-woodturning-lathe.jpg,mini-wood-lathe-chuck.jpg'
 taxonomy:
     category:
         - Tools
@@ -8,6 +8,7 @@ taxonomy:
         - lathe
 page-toc:
   active: true
+  depth: 1
 ---
 
 This the lathe, and various accessories for it.
@@ -52,3 +53,21 @@ Features include
   * Motor: 550w
   * Overall dimensions (L x W x H): 820 x 200 x 380mm
   * Weight: 38kg
+
+# Mini Wood Lathe 4-Jaw Chuck
+
+Another purchase from [Warco](https://www.warco.co.uk/woodturning-lathe-chucks-arbors/302914-mini-wood-lathe-chuck.html) was their Mini Wood Lathe 4-jaw chuck.
+
+![Warco Mini Wood Lathe 4-jaw Chuck](mini-wood-lathe-chuck.jpg?cropResize=300)
+
+Specification:
+
+* Diameter - 100mm
+* Thread - 1" x 8 TPI
+* Index plate on rear of chuck
+* Supplied with dovetail jaw set and threaded centre which is gripped in chuck base jaws
+
+Standard jaw capacity:
+
+* Gripping capacity: 32mm - 46mm
+* Expanding capacity: 59 mm - 72mm

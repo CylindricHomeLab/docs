@@ -1,5 +1,14 @@
+h1 {
+	font-size: 1.2rem;
+}
+
 pre {
 	line-height: 1;
+}
+
+ul ul {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .e-content ul li {
