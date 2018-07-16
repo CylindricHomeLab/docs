@@ -2,6 +2,14 @@ pre {
 	line-height: 1;
 }
 
+.e-content ul li {
+	margin-top: 0px
+}
+
+.e-content ol li {
+	margin-top: 0px
+}
+
 .blog-listing .card-title h5 {
 	margin-bottom: 0;
 	font-size: 1em;
