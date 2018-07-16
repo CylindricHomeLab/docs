@@ -1,15 +1,23 @@
 ---
 title: 'Lathe Tools'
 media_order: 'woodworking-lathe-chisels.jpg'
+taxonomy:
+    category:
+        - Tools
+    tag:
+        - lathe
 ---
+
+These are the various chisels, gouges and other tools I've bought for the lathe.
+===
+
+## Warco Set of 8 Woodworking Lathe Chisels
 
 I bought this set of 8 woodturning lathe chisels [from Warco](https://www.warco.co.uk/woodworking-chisels-wood-lathes/302842-woodworking-lathe-chisels.html) at the same time as the lathe.
 
 Superb build quality throughout - these woodworking tools are built to last.
 
-===
-
-![Warco Mini Wood Lathe](woodworking-lathe-chisels.jpg?cropResize=300)
+![Warco Lathe Chisels](woodworking-lathe-chisels.jpg?cropResize=300)
 
 * High speed steel.
 * Hardened and ground.

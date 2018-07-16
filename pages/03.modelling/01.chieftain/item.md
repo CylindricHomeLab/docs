@@ -1,4 +1,3 @@
-
 ---
 title: Chieftain
 media_order: 'maskol-1.jpg,maskol-2.jpg,camo-2.jpg,sprue.jpg,basecoat.jpg,camo-1.jpg'
