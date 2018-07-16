@@ -14,7 +14,7 @@ Various tips about PowerShell...
 This is useful for testing inbound network connectivity.
 
 ```ps
-function Listen-Port ($port=80){
+function Listen-Port ($port=80) {
 <#
 .DESCRIPTION
 Temporarily listen on a given port for connections dumps connections to the screen - useful for troubleshooting
@@ -36,29 +36,29 @@ Listener Closed Safely
 Created by Shane Wright. Neossian@gmail.com
 
 #>
-    $endpoint = new-object System.Net.IPEndPoint ([system.net.ipaddress]::any, $port)    
-    (new-object System.Net.Sockets.TcpListener (new-object System.Net.IPEndPoint ([system.net.ipaddress]::any, $port))).start()
+    $endpoint = New-Object System.Net.IPEndPoint ([system.net.ipaddress]::any, $port)    
+    (new-object System.Net.Sockets.TcpListener (new-object System.Net.IPEndPoint ([system.net.ipaddress]::any, $port))).Start()
 
-    $listener.server.ReceiveTimeout = 3000
-    $listener.start()    
+    $listener.Server.ReceiveTimeout = 3000
+    $listener.Start()    
     try {
     Write-Host "Listening on port $port, press CTRL+C to cancel"
-    While ($true){
+    While ($true) {
         if (!$listener.Pending())
         {
             Start-Sleep -Seconds 1;
-            continue;
+            Continue;
         }
         $client = $listener.AcceptTcpClient()
         $client.client.RemoteEndPoint | Add-Member -NotePropertyName DateTime -NotePropertyValue (get-date) -PassThru
-        $client.close()
+        $client.Close()
         }
     }
     catch {
         Write-Error $_          
     }
     finally{
-            $listener.stop()
+            $listener.Stop()
             Write-host "Listener Closed Safely"
     }
 
