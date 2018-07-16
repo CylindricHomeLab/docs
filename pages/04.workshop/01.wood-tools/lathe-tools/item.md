@@ -9,6 +9,7 @@ taxonomy:
 ---
 
 These are the various chisels, gouges and other tools I've bought for the lathe.
+
 ===
 
 ## Warco Set of 8 Woodworking Lathe Chisels

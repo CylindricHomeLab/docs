@@ -9,6 +9,7 @@ taxonomy:
 ---
 
 This the lathe, and various accessories for it.
+
 ===
 
 ## Warco Mini Wood Lathe
