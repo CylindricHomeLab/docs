@@ -11,7 +11,7 @@ show_pagination: true
 
 ![Wood Lathe Chisels](woodworking-lathe-chisels.jpg)
 
-I bought this set of 8 woodturning lathe chisels from Warco at the same time as the lathe.
+I bought this set of 8 woodturning lathe chisels ![from Warco](https://www.warco.co.uk/woodworking-chisels-wood-lathes/302842-woodworking-lathe-chisels.html) at the same time as the lathe.
 
 Superb build quality throughout - these woodworking tools are built to last.
 
