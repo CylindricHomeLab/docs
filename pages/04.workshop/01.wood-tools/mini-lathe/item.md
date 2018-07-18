@@ -8,7 +8,8 @@ taxonomy:
         - lathe
 page-toc:
   active: true
-  depth: 1
+  start: 1
+  end: 1
 ---
 
 This the lathe, and various accessories for it.
