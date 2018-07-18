@@ -21,5 +21,7 @@ This is just a few of the tools and equipment that I think I'd like for my works
 
 # Dust Extraction
 * A Axminster Hobby Series AWEDE2 Extractor
+
   £215.36 from [Axminster](https://www.axminster.co.uk/axminster-hobby-series-awede2-extractor-501263)
+
   ![Axminster Hobby Series AWEDE2 Extractor](https://cdn.axminster.co.uk/media/catalog/product/cache/1/image/920x/9df78eab33525d08d6e5fb8d27136e95/5/0/501263_xl.jpg)
