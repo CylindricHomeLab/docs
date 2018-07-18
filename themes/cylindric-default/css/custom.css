@@ -32,3 +32,15 @@ ul ul {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.content-item table {
+	border: 1px solid black;
+	border-spacing: 0;
+}
+
+.content-item th {
+	border: 1px solid black;	
+}
+.content-item td {
+	border: 1px solid black;
+}
