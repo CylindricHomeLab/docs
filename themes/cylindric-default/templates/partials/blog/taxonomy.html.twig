@@ -1,3 +1,4 @@
+{% set blog = page.parent.template == 'blog' ? page.parent : blog %}
 {% if page.taxonomy.tag %}
 <span class="tags">
     {% for tag in page.taxonomy.tag %}

@@ -1,4 +1,3 @@
-{% set blog = page.parent.template == 'blog' ? page.parent : blog %}
 {% set taxlist = children_only is defined ? taxonomylist.getChildPagesTags() : taxonomylist.get() %}
 
 {% if taxlist %}
