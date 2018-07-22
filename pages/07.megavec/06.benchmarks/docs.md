@@ -1,6 +1,6 @@
 ---
 title: Benchmarks
-media_order: 'c.PNG,g.PNG,e.PNG,f.PNG'
+media_order: 'c.PNG,g.PNG,e.PNG,f.PNG,i.PNG'
 ---
 
 ## C: 111.31 GB SSD - OCZ-VERTEX3
@@ -21,3 +21,4 @@ media_order: 'c.PNG,g.PNG,e.PNG,f.PNG'
 
 ## I: 1863.01 GB HDD - Samsung HD204UI
 
+![results](i.PNG)
