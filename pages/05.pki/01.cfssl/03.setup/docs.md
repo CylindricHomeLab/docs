@@ -13,13 +13,16 @@ General setup information for CFSSL.
 ===
 
 # Pre-reqs
+
 ```sh
 apt install -y golang
 go get -u github.com/cloudflare/cfssl/cmd/...
 ```
 
 # Root CA
+
 Create a main config ./ca/ca-config.json:
+
 ```json
 {
   "signing": {
@@ -32,7 +35,7 @@ Create a main config ./ca/ca-config.json:
           "signing",
           "key encipherment",
           "server auth",
-					"client auth"
+          "client auth"
         ],
         "expiry": "8760h"
       },
@@ -50,6 +53,7 @@ Create a main config ./ca/ca-config.json:
 ```
 
 Create a CSR config ./ca/ca-csr.json:
+
 ```json
 {
   "CN": "CylCerts Root CA",
@@ -76,7 +80,9 @@ cfssl gencert -initca ./ca/ca-csr.json | cfssljson -bare ./ca/ca
 ```
 
 # Intermediate CA
+
 Create a CSR config ./intermediate/intermediate-csr.json:
+
 ```json
 {
   "CN": "CylCerts Intermediate CA",
@@ -86,11 +92,11 @@ Create a CSR config ./intermediate/intermediate-csr.json:
   },
   "names": [
     {
-      "C": "GB",
+      "C":  "GB",
       "ST": "Surrey",
-      "L": "Farnborough",
-      "O": "CylCerts",
-      "OU": "ASR"
+      "L":  "Farnborough",
+      "O":  "CylCerts",
+      "OU": "Security"
     }
   ],
   "ca": {
@@ -100,11 +106,17 @@ Create a CSR config ./intermediate/intermediate-csr.json:
 ```
 
 Create the signing config intermediate/root_to_intermediate_ca.json:
+
 ```json
 {
   "signing": {
     "default": {
-      "usages": ["digital signature","cert sign","crl sign","signing"],
+      "usages": [
+        "digital signature",
+        "cert sign",
+        "crl sign",
+        "signing"
+      ],
       "expiry": "87600h",
       "ca_constraint": {"is_ca": true, "max_path_len":0, "max_path_len_zero": true}
     }
@@ -123,29 +135,33 @@ Sign the intermediate certificate:
 ```sh
 cfssl sign -ca ca/ca.pem -ca-key ca/ca-key.pem -config intermediate/root_to_intermediate_ca.json intermediate/intermediate_ca.csr | cfssljson -bare intermediate/intermediate_ca
 ```
+
 # Server Certificate
-Create the CSR config dom00001i3.csr.json:
+
+Create the CSR config newserver.csr.json:
+
 ```json
 {
-  "CN": "dom00001i3.il3management.dev",
+  "CN": "newserver.cylindric.net",
   "key": {
     "algo": "ecdsa",
     "size": 256
   },
   "names": [
   {
-    "C": "GB",
+    "C":  "GB",
     "ST": "Surrey",
-    "L": "Farnborough",
-    "O": "UKCloud",
+    "L":  "Farnborough",
+    "O":  "UKCloud",
     "OU": "ASR"
   }
   ],
-  "Hosts": ["dom00001i3.il3management.dev"]
+  "Hosts": ["newserver.cylindric.net"]
 }
 ```
 
 Create the signing config ./intermediate/intermediate_to_client_cert.json:
+
 ```json
 {
   "signing": {
@@ -164,11 +180,13 @@ Create the signing config ./intermediate/intermediate_to_client_cert.json:
 ```
 
 Generate the certificate:
+
 ```sh
-cfssl gencert -ca intermediate/intermediate_ca.pem -ca-key intermediate/intermediate_ca-key.pem -config intermediate/intermediate_to_client_cert.json dom00001i3.il3management.dev.json | cfssljson -bare certs/dom00001i3.il3management.dev
+cfssl gencert -ca intermediate/intermediate_ca.pem -ca-key intermediate/intermediate_ca-key.pem -config intermediate/intermediate_to_client_cert.json newserver.cylindric.net.json | cfssljson -bare certs/newserver.cylindric.net
 ```
 
 Clean up the old files:
+
 ```sh
 rm *.csr *.json
 ```
