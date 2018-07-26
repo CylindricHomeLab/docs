@@ -5,7 +5,7 @@ taxonomy:
         - PKI
     tag:
         - pki
-        - cfssl
+        - openssl
 ---
 
 How to create client certificates with CFSSL.
