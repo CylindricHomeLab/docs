@@ -14,7 +14,8 @@ How to create a certificate with SAN fields.
 
 # Create a Request Config
 
-Create a cert.cnf request template
+Create a cert.cnf request template. Note that because this has `prompt=no` in
+it, the values will come from the config and not interactively.
 
 ```text
 [ req ]
@@ -24,13 +25,15 @@ req_extensions     = req_ext
 prompt             = no
 
 [ req_distinguished_name ]
-countryName                = Country Name (2 letter code)
-stateOrProvinceName        = State or Province Name (full name)
-localityName               = Locality Name (eg, city)
-organizationName           = Organization Name (eg, company)
-commonName                 = Common Name (e.g. server FQDN or YOUR name)
+countryName         = GB
+stateOrProvinceName = Surrey
+localityName        = Camberley
+organizationName    = CylCorp
+commonName          = www.cylindric.net
+
 [ req_ext ]
 subjectAltName = @alt_names
+
 [alt_names]
 DNS.1   = www.cylindric.net
 DNS.2   = host1.uk.lon.cylindric.net
