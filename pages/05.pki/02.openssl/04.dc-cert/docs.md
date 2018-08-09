@@ -52,8 +52,6 @@ subjectAltName         = @alt_names
 keyUsage               = critical, nonRepudiation, digitalSignature, keyEncipherment
 extendedKeyUsage       = critical, clientAuth, emailProtection, msSmartcardLogin
 basicConstraints       = critical, CA:FALSE
-subjectKeyIdentifier   = hash
-authorityKeyIdentifier = keyid, issuer
 
 [ alt_names ]
 DNS.1 = dc1.cylindric.net
