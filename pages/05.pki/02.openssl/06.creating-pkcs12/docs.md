@@ -13,5 +13,5 @@ How to create a single PKCS12 certificate containing a cert, the key and the CA 
 ===
 
 ```sh
-openssl pkcs12 -export -inkey newcert-key.key -in newcert.crt -certfile ca_chain.pem -out newcert.pfx
+openssl pkcs12 -export  -inkey newcert-key.key -in newcert.crt -certfile ca_chain.pem -out newcert.pfx
 ```
