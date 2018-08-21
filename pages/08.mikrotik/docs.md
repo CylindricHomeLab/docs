@@ -28,10 +28,12 @@ ip dns static add name=spare.workshop.home.cylindric.net address=172.29.14.206
 
 # OpenVPN
 
+Create an IP pool for the VPN to use:
 ```
 /ip pool add name=ovpn-pool ranges=172.29.15.100-172.29.15.199
 ```
 
+Create a new PPP profile:
 ```
 /ppp profile 
 add change-tcp-mss=default comment="" local-address=172.29.15.1 \
@@ -39,13 +41,15 @@ name="CylVpn" only-one=default remote-address=ovpn-pool \
 use-compression=default use-encryption=required
 ```
 
+Create a new user:
 ```
 /ppp secret 
 add caller-id="" comment="" disabled=no limit-bytes-in=0 \
-limit-bytes-out=0 name="mark" password="agehx159" \
+limit-bytes-out=0 name="mark" password="userepassword" \
 routes="" service=ovpn
 ```
 
+Create a new OpenVPN server using a previously-created certificate:
 ```
 /interface ovpn-server server 
 set auth=sha1,md5 certificate=vpn.home.cylindric.net \
@@ -54,6 +58,7 @@ enabled=yes keepalive-timeout=disabled max-mtu=1500 mode=ip netmask=29 \
 port=1194 require-client-certificate=no
 ```
 
+Make sure inbound traffic to the port is enabled:
 ```
 /ip firewall filter 
 add action=accept chain=input comment="OpenVPN" disabled=no dst-port=1194 protocol=tcp
