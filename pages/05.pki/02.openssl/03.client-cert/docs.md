@@ -36,3 +36,11 @@ How to create client certificates with CFSSL.
 
     chmod 444 intermediate/certs/www.cylindric.net.cert.pem
 ```
+
+## Certificate including CA chain
+
+Certificates should be combined in this order:
+
+1. Primary certificate
+2. Intermediate certificate
+3. Root certificate
