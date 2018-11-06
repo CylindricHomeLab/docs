@@ -152,8 +152,8 @@ Create the CSR config newserver.csr.json:
     "C":  "GB",
     "ST": "Surrey",
     "L":  "Farnborough",
-    "O":  "UKCloud",
-    "OU": "ASR"
+    "O":  "CylCerts",
+    "OU": "Security"
   }
   ],
   "Hosts": ["newserver.cylindric.net"]
