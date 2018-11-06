@@ -96,7 +96,7 @@ The key item in here if you want everything to behave like the Arduino sketches 
 
 Now we can put in a simple `main.cpp` to test things out:
 
-```c++
+```cpp
 #include "Arduino.h"
 
 void setup() {
