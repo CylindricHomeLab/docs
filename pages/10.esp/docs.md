@@ -1,5 +1,5 @@
 ---
-title: 'EPS'
+title: 'ESP'
 taxonomy:
     category:
         - electronics
@@ -8,9 +8,9 @@ taxonomy:
         - electronics
 ---
 
-# Tools
+## Tools
 
-# ESP Stack Trace
+### ESP Stack Trace
 If the ESP code crashes, there should be a stack trace dumped out to Serial. As there aren't any symbols included in that, it's pretty much useless.
 
 The [EspExceptionDecoder](https://github.com/me-no-dev/EspExceptionDecoder) is a little Arduino plugin that gives you a UI that you can paste the stack into, and in combination with the original Elf file will give detailed information about where the problem occurred.
