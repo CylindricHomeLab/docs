@@ -11,8 +11,3 @@ body_classes: 'title-center title-h1h2'
 ---
 
 Hello
-
-{% for category,value in page.header.taxonomy.category %}
-{{ category }}{{ value }}
-
-{% endfor %}

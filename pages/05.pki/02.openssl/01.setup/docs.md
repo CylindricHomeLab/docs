@@ -32,6 +32,7 @@ We'll refer to the base directory as `$BASE` everywhere, just to make it clear w
 ## Pre-Requisites
 
 ```sh
+mkdir -p $BASE/certs
 mkdir -p $BASE/root-ca
 cd $BASE/root-ca
 mkdir certs crl newcerts private
@@ -63,7 +64,6 @@ crlnumber         = $dir/crlnumber
 crl               = $dir/crl/root.crl.pem
 crl_extensions    = crl_ext
 default_crl_days  = 730
-x509_extensions   = myca_extensions
 
 default_md        = sha256
 
@@ -105,19 +105,15 @@ basicConstraints       = critical, CA:true
 keyUsage               = critical, digitalSignature, cRLSign, keyCertSign
 extendedKeyUsage       = serverAuth
 crlDistributionPoints  = @crl_section
-subjectAltName         = @alt_names
 authorityInfoAccess    = @ocsp_section
 
-[ myca_extensions ]
-basicConstraints       = critical,CA:TRUE
-keyUsage               = critical,any
+[ v3_intermediate_ca ]
 subjectKeyIdentifier   = hash
 authorityKeyIdentifier = keyid:always,issuer
-keyUsage               = digitalSignature,keyEncipherment,cRLSign,keyCertSign
-extendedKeyUsage       = serverAuth
-crlDistributionPoints  = @crl_section
-subjectAltName         = @alt_names
+basicConstraints       = critical, CA:true, pathlen:0
+keyUsage               = critical, digitalSignature, cRLSign, keyCertSign
 authorityInfoAccess    = @ocsp_section
+crlDistributionPoints  = @crl_section
 
 [ crl_ext ]
 authorityKeyIdentifier = keyid:always
@@ -178,6 +174,8 @@ chmod 444 certs/root.cert.pem
 # SSL Intermediate CA
 ## Configure the Intermediate CA
 ```sh
+cd $BASE
+mkdir -p $BASE/intermediate-ca
 cd $BASE/intermediate-ca
 mkdir certs crl csr newcerts private
 chmod 700 private
@@ -212,7 +210,6 @@ cert_opt          = ca_default
 default_days      = 375
 preserve          = no
 policy            = policy_loose
-x509_extensions   = myca_extensions
 
 [ policy_loose ]
 countryName            = optional
@@ -222,21 +219,6 @@ organizationName       = optional
 organizationalUnitName = optional
 commonName             = supplied
 emailAddress           = optional
-
-[ myca_extensions ]
-basicConstraints       = critical,CA:FALSE
-keyUsage               = critical,any
-subjectKeyIdentifier   = hash
-authorityKeyIdentifier = keyid:always,issuer
-keyUsage               = digitalSignature,keyEncipherment
-extendedKeyUsage       = serverAuth
-crlDistributionPoints  = @crl_section
-subjectAltName         = @alt_names
-authorityInfoAccess    = @ocsp_section
-
-[alt_names]
-DNS.0 = sandbox.com
-DNS.1 = sandbox.org
 
 [ req ]
 prompt                 = no
@@ -307,6 +289,8 @@ cd $BASE/root-ca
 openssl ca \
         -batch \
         -config openssl.cnf \
+        -extensions v3_intermediate_ca \
+        -days 3650 \
         -notext \
         -in ../intermediate-ca/csr/intermediate.csr.pem \
         -passin pass:rootpass \
@@ -327,7 +311,7 @@ openssl ca \
         -config openssl.cnf \
         -gencrl \
         -keyfile private/root.key.pem \
-        -passin pass:rootca \
+        -passin pass:rootpass \
         -cert certs/root.cert.pem \
         -out crl/root.crl.pem
 
@@ -343,7 +327,7 @@ openssl crl \
 ```sh
 cd $BASE
 
-cat intermediate-ca/certs/intermediate.cert.pem root-ca/certs/ca.cert.pem > certs/ca-chain.cert.pem
+cat intermediate-ca/certs/intermediate.cert.pem root-ca/certs/root.cert.pem > certs/ca-chain.cert.pem
 chmod 444 certs/ca-chain.cert.pem
 ```
 

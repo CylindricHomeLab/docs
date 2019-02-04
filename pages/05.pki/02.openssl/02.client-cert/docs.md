@@ -102,6 +102,21 @@ openssl crl \
         -out crl/intermediate.crl
 ```
 
+## Check
+Check the certificate was created correctly:
+```sh
+openssl verify -CAfile certs/ca-chain.cert.pem certs/www.cylindric.net.crt.pem
+```
+
+Verify with the CRL too:
+```sh
+openssl verify \
+    -crl_check \
+    -CAfile intermediate-ca/crl/intermediate.crl.pem \
+    certs/www.cylindric.net.crt.pem
+```
+
+
 ## Certificate including CA chain
 
 Certificates should be combined in this order:
