@@ -310,7 +310,6 @@ cd $BASE/root-ca
 openssl ca \
         -config openssl.cnf \
         -gencrl \
-        -keyfile private/root.key.pem \
         -passin pass:rootpass \
         -cert certs/root.cert.pem \
         -out crl/root.crl.pem
@@ -320,6 +319,21 @@ openssl crl \
         -in crl/root.crl.pem \
         -outform DER \
         -out crl/root.crl
+
+cd $BASE/intermediate-ca
+
+openssl ca \
+        -config openssl.cnf \
+        -gencrl \
+        -passin pass:intermediatepass \
+        -cert certs/intermediate.cert.pem \
+        -out crl/intermediate.crl.pem
+
+openssl crl \
+        -inform PEM \
+        -in crl/intermediate.crl.pem \
+        -outform DER \
+        -out crl/intermediate.crl
 
 ```
 
