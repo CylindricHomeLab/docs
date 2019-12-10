@@ -40,4 +40,4 @@ T    | Temperature
 
 Model | Description
 ----- | -----------
-Town  | AmeraLabs Town 3D printer test part
+Town  | AmeraLabs Town 3D printer test part | ![AmeraLabs Town](town.png?cropZoom=320,240)
