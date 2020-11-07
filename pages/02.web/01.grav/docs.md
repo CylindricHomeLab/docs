@@ -12,8 +12,16 @@ Various Grav notes.
 
 ===
 
-# Updating the Highlighter plugin
+# Updating Grav
+```bash
+cd /var/www/cylindric.net/html
+bin/gpm self-upgrade
+bin/gpm update
+chown -R www-data:www-data .
 ```
+
+# Updating the Highlighter plugin
+```bash
 git clone https://github.com/isagalaev/highlight.js.git
 cd highlight.js
 npm install
@@ -28,7 +36,7 @@ The full list of languages is available [from therepository](https://github.com/
 
 Install the new script:
 
-```
+```bash
 sudo cp build/highlight.pack.js /var/www/cylindric.net/html/user/plugins/highlight/js/
 ```
 
