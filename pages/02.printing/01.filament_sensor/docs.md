@@ -24,10 +24,10 @@ Cut off the plug on the supplied cable. Note that the sensor-end is a 4-pin conn
 Depending on what pins are available on your Pi host, find a suitable combination of GND, 3.3V and GPIO. Pins 17, 18, 19 and 20 form a convenient compact square, so I used those.
 
 These are the pins on a Pi:
-![RaspberryPi GPIO Pins](pi4_pinout1.png)
+![RaspberryPi GPIO Pins](pi4_pinout1.png?resize=300)
 
 These are the four I chose:
-![RaspberryPi GPIO Pins](pi4_pinout2.png)
+![RaspberryPi GPIO Pins](pi4_pinout2.png?resize=300)
 
 I used a 2x2 pin-header cable-to-board female plug like this [M20-Series connector housing](https://uk.farnell.com/harwin/m20-1070200/crimp-housing-2-2way/dp/865692):
 
