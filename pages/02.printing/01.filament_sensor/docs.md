@@ -15,6 +15,8 @@ General notes for the BIGTREETECH Smart Filament Sensor
 
 ## Connecting to an OctoPrint host on a RaspberryPi
 
+![BIGTREETECH Smart Filament Sensor](bigreetech.png "BIGTREETECH Smart Filament Sensor" )
+
 ### Physical Connections
 
 Cut off the plug on the supplied cable. Note that the sensor-end is a 4-pin connector, and the host-end is a 3-pin connector. Cut off near the 3-pin end.
