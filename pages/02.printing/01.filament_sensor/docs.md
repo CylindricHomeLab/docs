@@ -136,6 +136,7 @@ When the plugin detects a failure, it will unload old filament and wait for you 
 
 | Item | Link |
 | ---- | ---- |
+| Marlin 2.0 | [GitHub](https://github.com/davidramiro/Marlin-Ai3M-2.0.x)
 | BIGTREETECH Smart Filament Sensor | [Amazon](https://www.amazon.co.uk/dp/B07Z7Y5VY9), [AliExpress](https://www.aliexpress.com/i/4000269547406.html)
 | 2x2 Pin-Header Connector Housing | [Farnell M20-Series](https://uk.farnell.com/harwin/m20-1070200/crimp-housing-2-2way/dp/865692), [Hobbytronics Crimp Connector Housing](https://www.hobbytronics.co.uk/crimp-conn-housing-22?keyword=crimp%202x2)
 | Bowden tube | [Amazon](https://www.amazon.co.uk/dp/B06XWYM4Y4)
