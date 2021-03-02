@@ -12,6 +12,22 @@ Various Grav notes.
 
 ===
 
+# Requirements
+
+Now needs PHP 7.4.
+
+```bash
+sudo su -
+apt-get update
+apt -y install software-properties-common
+add-apt-repository ppa:ondrej/php
+apt-get update
+apt -y install php7.4
+apt-get install -y php7.4-{mbstring,curl,ctype,zip,fpm,dom,gd,xml}
+```
+
+Update `/etc/caddy/Caddyfile` to use the `7.4-fpm`.
+
 # Updating Grav
 ```bash
 cd /var/www/cylindric.net/html
@@ -44,6 +60,6 @@ Clear the cache:
 
 ```
 cd /var/www/cylindric.net/html
-sudo bin/grav clear-cache --all
+sudo bin/grav clearcache --all
 sudo chown -R www-data:www-data /var/www/cylindric.net/html/
 ```
