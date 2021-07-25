@@ -16,7 +16,6 @@ Install [GPG4Win](https://www.gpg4win.org/), I'm using v3.1.13
 
 
 
-
 ## Create the new key ring
 [Yubico docs](https://support.yubico.com/hc/en-us/articles/360013790259-Using-Your-YubiKey-with-OpenPGP)
 
@@ -89,3 +88,4 @@ Choose the `(2) Encryption key` and enter the passphrase from the first steps he
 The Admin Pin is the Yubikey Admin PIN, by default 12345678.
 
 Now `save` and `quit`
+
