@@ -10,6 +10,14 @@ taxonomy:
         - yubikey
 ---
 
+
+[mermaid]
+flowchart LR
+    Firefox-- SOCKS5 -->PuTTY
+    PuTTY-- SSH -->id1(Firewall)
+    Firewall-- SSH -->Jump Server
+[/mermaid]
+
 ## In the HomeLab
 
 ### Networks
