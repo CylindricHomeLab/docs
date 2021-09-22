@@ -28,6 +28,18 @@ apt-get install -y php7.4-{mbstring,curl,ctype,zip,fpm,dom,gd,xml}
 
 Update `/etc/caddy/Caddyfile` to use the `7.4-fpm`.
 
+Plugins being used (`./bin/gpm install <package>`):
+
+* admin
+* cookie-consent
+* ganalytics
+* git-sync
+* highlight
+* markdown-notices
+* mermaid-diagrams
+* page-toc
+* tagcloud
+
 # Updating Grav
 ```bash
 cd /var/www/cylindric.net/html
