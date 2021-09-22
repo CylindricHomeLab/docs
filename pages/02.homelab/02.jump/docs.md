@@ -14,8 +14,8 @@ taxonomy:
 [mermaid]
 flowchart LR
     Firefox-- SOCKS5 -->PuTTY
-    PuTTY-- SSH -->id1(Firewall)
-    Firewall-- SSH -->Jump Server
+    PuTTY-- SSH -->jump[Jump Server]
+    yubikey-- PIV -->PuTTY
 [/mermaid]
 
 ## In the HomeLab
