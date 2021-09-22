@@ -64,12 +64,12 @@ Restart sshd.
       ```
       PS> CD C:\Program Files\OpenSC Project\OpenSC\tools
       ```
-   3. Determine the "slot" that the Yubikey has been nominated (in this case, `2`):  
+   1. Determine the "slot" that the Yubikey has been nominated (in this case, `2`):  
       ```
       PS> pkcs11-tool.exe --list-slots
       Slot 2 (0x9): Yubico YubiKey OTP+FIDO+CCID 0
       ```
-   4. Determine the corret key to use (in this case ID is `01`):  
+   1. Determine the corret key to use (in this case ID is `01`):  
       ```
       PS> .\pkcs15-tool.exe --reader 2 -k
       Private EC Key [PIV AUTH key]
@@ -84,7 +84,7 @@ Restart sshd.
       ID             : 01
       MD:guid        :  0x'43......023220000000000000000'
       ```
-   5. Finally, extract the pubkey:
+   1. Finally, extract the pubkey:
       ```
       PS> .\pkcs15-tool.exe --reader 2 --read-ssh-key 01
       ecdsa-sha2-nistp384 AAAAE2VjZHNhLXNoYdItbmlzdHAzODQAAAAIbmlzdHAzODQAAABhBIsN6+cMvpGvqDHbfcG1hjN5xL75yf+++76D7AlE9GYMs3VrIQXL9serER9qCrjZNxhldK/J6sFB/QWivmCcgqqKaHoIhew0dtKM037QWM/BdSvZ0ZupPNZCLcsu7IC7og== PIV AUTH pubkey
@@ -93,14 +93,14 @@ Restart sshd.
 
 ### Setup Pageant
 1. Launch pageant
-2. On the taskbar, right-click the Pageant icon and click Add PKCS Cert
-3. Browse to `C:\Program Files\OpenSC Project\OpenSC\pkcs11` and select `opensc-pkcs11.dll`
-4. In the window "PuTTY: Select Certificate for Authentication" click "more choices"
-5. The recently-generated key should be in the list, select it
+1. On the taskbar, right-click the Pageant icon and click Add PKCS Cert
+1. Browse to `C:\Program Files\OpenSC Project\OpenSC\pkcs11` and select `opensc-pkcs11.dll`
+1. In the window "PuTTY: Select Certificate for Authentication" click "more choices"
+1. The recently-generated key should be in the list, select it
 
 ### Setup PuTTY
 1. Launch PuTTY
-2. Create a new stored session (e.g. `Homelab`)
+1. Create a new stored session (e.g. `Homelab`)
    * Connection -> Data: Auto-login username: `your remote username`
    * Connection -> SSH -> Tunnels:  
      Source Port: `45543` (or any convenient free local port)  
@@ -109,3 +109,23 @@ Restart sshd.
    * Window -> Colours:
      Change `ANSI Blue` to something not ridiculously dark like the default. `166 166 255` works quite nicely
 
+### Setup Firefox
+
+Once connected to the SSH session it will be possible to utilise the connection as a SOCKS5 proxy.
+In Firefox this is made easy using the [FoxyProxy](https://addons.mozilla.org/en-GB/firefox/addon/foxyproxy-standard/) extension.
+
+1. Install the extension
+1. Open the extension config from the toolbar button
+1. Add a new Proxy:  
+      Title: `HomeLabSSH`
+      Proxy Type: `SOCKS5`
+      IP: `127.0.0.1`
+      Port: `45543` (or whatever was put into the PuTTY config earlier)
+      Username: `blank`
+      Password: `blank`
+1. Add some appropriate patterns to route traffic automatically:  
+      Name: `Home Domain`, Pattern: `*.home.cylindric.net`  
+      Name: `Home Domain (all ports)`, Pattern: `*.home.cylindric.net:*`  
+      Name: `Home IP`, Pattern: `172.29.14.*`  
+      Name: `Home IP (all ports)`, Pattern: `172.29.14.*:*`
+1. On the browser button, select "Use enabled proxies by pattern"
