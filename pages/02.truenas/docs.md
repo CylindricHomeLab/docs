@@ -23,32 +23,24 @@ This is not a guide to teach TrueNAS. If you need help installing TrueNAS, manag
 1. Create a new User:  
    name: `multimedia`
    id: `1000` (make a note of whatever this is on your NAS, also the group ID)
-1. Create new Users and Groups for the various jails:  
-    ```
-    pw groupadd plex -g 972
-    pw useradd plex -u 972 -g plex -s /usr/sbin/nologin -d /var/empty
-
-    pw groupadd sabnzbd -g 350
-    pw useradd sabnzbd -u 350 -g sabnzbd -s /usr/sbin/nologin -d /var/empty
-    ```
-3. Create a new SMB share:  
+1. Create a new SMB share:  
    path: `/mnt/data1/media`  
    name: `media`  
    purpose: `Default share parameters`  
    description: `Multimedia`  
    enabled: `yes`
-4. Edit the Share ACLs:  
+1. Edit the Share ACLs:  
    Share Name: `media`  
    * ACL1 SID: `S-1-1-0`  
      ACL1 Domain: `blank`  
      ACL1 Name: `Everyone`  
      ACL1 Permission: `FULL`  
      ACL1 Type: `ALLOWED`
-5. Edit the Filesystem ACL:  
+1. Edit the Filesystem ACL:  
    Path: `/mnt/data1/media`  
    User: `multimedia`
    Group: `multimedia`
-6. In the shell create the main data root folders:  
+1. In the shell create the main data root folders:  
    `cd /mnt/data1/media`  
    `mkdir -p films tv incoming/complete/films incoming/complete/tv`  
    `chown -R multimedia:multimedia .`
