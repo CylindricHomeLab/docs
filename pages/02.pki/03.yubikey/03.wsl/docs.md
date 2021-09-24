@@ -26,6 +26,13 @@ In an administrative Powershell prompt:
 Add-Content $env:APPDATA\gnupg\gpg-agent.conf "enable-putty-support"
 Add-Content $env:APPDATA\gnupg\gpg-agent.conf "enable-ssh-support"
 
+Add-Content $env:APPDATA\gnupg\scdaemon.conf "debug-level guru"
+Add-Content $env:APPDATA\gnupg\scdaemon.conf "log-file scdaemon.log"
+Add-Content $env:APPDATA\gnupg\scdaemon.conf "reader-port Yubico Yubi"
+
+Add-Content $env:APPDATA\gnupg\gnupg.conf "charset utf-8"
+
+
 $OpenSSHClient = Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Client*'
 Add-WindowsCapability -Online -Name $OpenSSHClient.Name
 
